@@ -60,8 +60,7 @@ export class NgpFormControl {
       onCleanup => {
         this.formField?.setFormControl(this.id());
         onCleanup(() => this.formField?.removeFormControl());
-      },
-      { allowSignalWrites: true },
+      }
     );
   }
 }
