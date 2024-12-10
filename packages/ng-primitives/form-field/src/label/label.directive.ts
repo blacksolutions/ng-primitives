@@ -66,8 +66,7 @@ export class NgpLabel {
       onCleanup => {
         this.formField?.addLabel(this.id());
         onCleanup(() => this.formField?.removeLabel(this.id()));
-      },
-      { allowSignalWrites: true },
+      }
     );
   }
 
