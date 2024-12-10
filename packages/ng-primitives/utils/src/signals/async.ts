@@ -30,7 +30,7 @@ export function onChange<T>(
         previousValue.set(value);
       }
     },
-    { allowSignalWrites: true, injector: options?.injector },
+    { injector: options?.injector },
   );
 
   // call the fn with the initial value
@@ -75,6 +75,6 @@ export function onFormControlChange<T>(
         previousValue.set(value);
       }
     },
-    { allowSignalWrites: true, injector: options?.injector },
+    { injector: options?.injector },
   );
 }
