@@ -42,8 +42,7 @@ export class NgpDescription {
       onCleanup => {
         this.formField?.addDescription(this.id());
         onCleanup(() => this.formField?.removeDescription(this.id()));
-      },
-      { allowSignalWrites: true },
+      }
     );
   }
 }
